@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: go-devops
-        image: amit2210/go-devops:v1
+        image: amit2210/go-devops:{{ .Values.image.tag }}
         ports:
         - containerPort: 8080
